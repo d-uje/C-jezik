@@ -8,19 +8,12 @@
 
 int main(void)
 {
-    int number, sign;
+    float number = 0;
 
     printf("Please type in a number: ");
-    scanf("%d", number);
+    scanf("%f", &number);
 
-    if (number < 0)
-        sign = -1;
-    else if (number == 0)
-        sign = 0;
-    else
-        sign = 1;
-
-    printf("Sign: %d\n", sign);
+    printf("%f", number);
 
     return 0;
 
