@@ -8,28 +8,27 @@
 
 int main()
 {
-    //Declare all primitive types
+    //Declare and initialize all primitive variable types
     char charVal;
     unsigned char uCharVal;
 
-    short shortVal = 0;
-    unsigned short uShortVal = 0;
+    short shortVal;
+    unsigned short uShortVal;
 
-    int intVal = 0;
-    unsigned int uIntVal = 0;
+    int intVal;
+    unsigned int uIntVal;
 
-    long longVal = 0;
-    unsigned long uLongVal = 0;
+    long longVal;
+    unsigned long uLongVal;
 
-    long long longLongVal = 0;
-    unsigned long long uLongLongVal = 0;
+    long long longLongVal;
+    unsigned long long uLongLongVal;
 
-    float floatVal = 0.0;
-    double doubleVal = 0.0;
-    long double longDoubleVal = 0;
+    float floatVal;
+    double doubleVal;
+    long double longDoubleVal;
 
-
-    //Read input from user
+    //Output from the user
     printf("Enter a character: ");
     charVal = getchar();
     getchar();
@@ -38,39 +37,61 @@ int main()
     uCharVal = getchar();
     getchar();
 
-    printf("Enter a signed short: ");
-    scanf("%d", &shortVal);
+    printf("Enter a signed short value: ");
+    scanf("%hi", &shortVal);
 
-    printf("Enter a unsigned short: ");
-    scanf("%d", &uShortVal);
+    printf("Enter an unsigned short value: ");
+    scanf("%hu", &uShortVal);
 
-    printf("Enter a signed int: ");
+    printf("Enter an signed integer value: ");
     scanf("%d", &intVal);
 
-    printf("Enter a unsigned int: ");
-    scanf("%d", &uIntVal);
+    printf("Enter an unsigned integer value: ");
+    scanf("%lu", &uIntVal);
 
-    printf("Enter a signed long: ");
-    scanf("%d", &longVal);
+    printf("Enter a signed long value: ");
+    scanf("%ld", &longVal);
 
-    printf("Enter a unsigned long: ");
-    scanf("%d", &uLongLongVal);
+    printf("Enter an unsigned long value: ");
+    scanf("%lu", &uLongVal);
 
-    printf("Enter a signed long long: ");
+    printf("Enter a signed long long value: ");
     scanf("%lld", &longLongVal);
 
-    printf("Enter a unsigned long long: ");
-    scanf("%llu", uLongLongVal);
+    printf("Enter an unsigned long long value: ");
+    scanf("%llu", &uLongLongVal);
 
-    printf("Enter a float: ");
+    printf("Enter a float value: ");
     scanf("%f", &floatVal);
 
-    printf("Enter a double: ");
+    printf("Enter a double value: ");
     scanf("%lf", &doubleVal);
 
-    printf("Enter a long double: ");
-    scanf("%Lf", longDoubleVal);
+    printf("Enter a long double value: ");
+    scanf("%Lf", &longDoubleVal);
 
+
+    //print
+    printf("\nYou entered character: '%c' \n", charVal);
+    printf("You entered unsigned character: '%c' \n\n", uCharVal);
+
+    printf("You entered signed short: %hi \n", shortVal);
+    printf("You entered unsigned short: %hu \n\n", uShortVal);
+
+    printf("You entered signed int: %d \n", intVal);
+    printf("You entered unsigned int: %lu \n\n", uIntVal);
+
+    printf("You entered signed long: %ld \n", longVal);
+    printf("You entered unsigned long: %lu \n\n", uLongVal);
+
+    printf("You entered signed long long: %lld \n", longLongVal);
+    printf("You entered unsigned long long: %llu \n\n", uLongLongVal);
+
+    printf("You entered float: %f \n", floatVal);
+
+    printf("You entered double: %lf \n", doubleVal);
+
+    printf("You entered long double: %Lf \n", longDoubleVal);
 
     return 0;
 }
